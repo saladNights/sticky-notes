@@ -87,11 +87,11 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "lint:js"
+      "npm run lint:js"
     ],
     "*.{css,scss}": [
       "prettier --write",
-      "lint:styles"
+      "npm run lint:styles"
     ]
   }
 }
