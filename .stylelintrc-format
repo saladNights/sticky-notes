@@ -5,8 +5,10 @@
   ],
   "plugins": [
     "stylelint-order",
-    "stylelint-config-rational-order/plugin"
+    "stylelint-config-rational-order/plugin",
+    "stylelint-scss"
   ],
+  "syntax": "scss",
   "rules": {
     "order/properties-order": [],
     "order/order": [
@@ -43,6 +45,8 @@
       {
         "ignorePseudoClasses": ["global"]
       }
-    ]
+    ],
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
   }
 }

@@ -7,8 +7,8 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .title {
@@ -17,9 +17,10 @@
 
 .desk {
   position: relative;
+
   flex: 1 1 auto;
 
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .actions {
@@ -30,9 +31,10 @@
 
 .trashZone {
   position: absolute;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+
+  padding: 1em;
 
   border: 2px dashed black;
-  padding: 1em;
 }

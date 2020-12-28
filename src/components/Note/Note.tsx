@@ -150,6 +150,7 @@ const Note = (props: Props) => {
 
       const deskOffset = getOffset(deskEl);
       const noteOffset = noteRef.current && getOffset(noteRef.current);
+
       const deskMaxRight = deskOffset.left + deskEl.offsetWidth;
       const deskMaxBottom = deskOffset.top + deskEl.offsetHeight;
 

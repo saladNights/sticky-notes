@@ -1,25 +1,28 @@
 .noteWrapper {
   position: absolute;
+
   border-radius: 6px;
 }
 
 .note {
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 
   border: 1px solid black;
   border-radius: 6px;
-  overflow: hidden;
-  display: inline-block;
   cursor: pointer;
-  width: 100%;
-  height: 100%;
-  position: relative;
 
   textarea {
-    border: none;
     width: 100%;
     height: 100%;
-    resize: none;
 
+    border: none;
+
+    resize: none;
 
     &:focus {
       outline: none;
@@ -32,8 +35,8 @@
 }
 
 .noteContent {
-  padding: 1em;
   height: 100%;
+  padding: 1em;
   overflow: auto;
 }
 
@@ -48,10 +51,12 @@
 }
 
 .drag {
-  cursor: pointer;
   position: absolute;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+
   font-size: 12px;
   line-height: 1;
+
+  cursor: pointer;
 }
