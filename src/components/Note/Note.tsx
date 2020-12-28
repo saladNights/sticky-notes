@@ -249,7 +249,7 @@ const Note = (props: Props) => {
         zIndex: isEdit ? 999999 : 'auto',
         width: size.x,
         height: size.y,
-        border: isDeleting ? '2px solid red' : 'none',
+        boxShadow: isDeleting ? '0px 0px 20px 0px rgba(255, 0, 0, 1)' : 'none',
       }}
     >
       <div className={styles.note}>

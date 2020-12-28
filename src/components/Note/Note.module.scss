@@ -1,10 +1,13 @@
 .noteWrapper {
   position: absolute;
+  border-radius: 6px;
 }
 
 .note {
   position: relative;
   border: 1px solid black;
+  border-radius: 6px;
+  overflow: hidden;
   display: inline-block;
   cursor: pointer;
   width: 100%;
