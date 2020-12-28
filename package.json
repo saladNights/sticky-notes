@@ -88,7 +88,7 @@
     "*.{ts,tsx}": [
       "lint:js"
     ],
-    "*.scss": [
+    "*.module.scss": [
       "prettier --write",
       "lint:styles"
     ]
