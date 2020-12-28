@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 2rem 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  flex-shrink: 0;
+}
+
+.desk {
+  position: relative;
+  flex: 1 1 auto;
+
+  border-radius: .25rem;
+}
+
+.actions {
+  flex-shrink: 0;
+
+  padding: 1rem 0;
+}
+
+.trashZone {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  border: 2px dashed black;
+  padding: 1em;
+}

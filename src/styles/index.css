@@ -1,0 +1,11 @@
+@import '~sanitize.css';
+
+html {
+  min-width: 1024px;
+  min-height: 768px;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}

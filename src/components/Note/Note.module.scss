@@ -1,0 +1,51 @@
+.noteWrapper {
+  position: absolute;
+}
+
+.note {
+  position: relative;
+  border: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+
+  textarea {
+    border: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.noteEdit {
+  z-index: 999999;
+}
+
+.noteContent {
+  padding: 1em;
+  height: 100%;
+  overflow: auto;
+}
+
+.actions {
+  button {
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.drag {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  line-height: 1;
+}

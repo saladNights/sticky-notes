@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es2017",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "sourceMap": true,
+    "noUnusedLocals": true,
+    "lib": ["dom", "es2015", "esnext"],
+    "allowJs": false,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@uiKit/*": ["src/uiKit/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@styles/*": ["src/styles/*"],
+      "@constants": ["./src/constants.ts"],
+      "@config": ["./src/config.ts"]
+    }
+  },
+  "include": ["types/**/*", "src/**/*", ".eslintrc.js"],
+  "exclude": [
+    "./node_modules",
+    "./dist",
+    "./webpack",
+    "./public"
+  ]
+}
