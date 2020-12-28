@@ -65,6 +65,7 @@ module.exports = {
     },
   },
   output: {
+    publicPath: '',
     path: path.resolve(__dirname, '../dist'),
     filename: 'bundle.js',
   },
@@ -84,7 +85,9 @@ module.exports = {
       ]
     }),
     new WebpackPwaManifest({
-      publicPath: '/',
+      filename: 'manifest.json',
+      // publicPath: '',
+      includeDirectory: false,
       name: 'Stick!',
       short_name: 'Stick!',
       icons: [
