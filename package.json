@@ -74,7 +74,6 @@
     "webpack-pwa-manifest": "^4.3.0"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -87,11 +86,11 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "eslint --fix"
+      "lint:js"
     ],
     "*.css": [
       "prettier --write",
-      "stylelint --fix --config ./.stylelintrc-format"
+      "lint:styles"
     ]
   }
 }
