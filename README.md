@@ -1,1 +1,4 @@
-Boilerplate for L-size projects
+Sticky Notes
+
+Features:
+– create/move/resize/delete notes
